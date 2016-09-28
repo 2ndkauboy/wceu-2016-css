@@ -1,15 +1,23 @@
 // absolute position for home
 
-.home .main-navigation,
-.home .main-small-navigation {
+// .home .main-navigation,
+// .home .main-small-navigation {
+.main-navigation,
+.main-small-navigation {
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	width: 100%;
+
+	@include respond-above( 'large' ) {
+
+		top: auto;
+		bottom: 0;
+
+	}
+
 }
 
 .home .main-small-navigation {
-	top: 0;
-	bottom: auto;
 	z-index: 100;
 	border: none;
 }
@@ -19,6 +27,7 @@
 .main-navigation,
 .main-small-navigation {
 	@include clearfix();
+	// position: relative;
 	background: $green;
 	font-family: 'Lato', sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -32,6 +41,7 @@
 	a:hover,
 	a:focus {
 		color: $blue;
+		background-color: #fff;
 	}
 
 	.current_page_item > a,

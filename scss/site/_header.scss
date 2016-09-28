@@ -3,34 +3,53 @@
 
 #masthead {
 	position: relative;
-	@media screen and ( min-width: 600px ) {
-		padding-top: 60px;
-	}
+	// @media screen and ( min-width: 600px ) {
+	// 	padding-top: 60px;
+	// }
 }
 
 #masthead hgroup {
-	height: 260px;
-	background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/illustration-scenery.png') center 30px repeat-x;
+	// height: 260px;
+	// background: $offwhite;
+
+	background: url(http://2017.europe.wordcamp.org/files/2016/09/hero-wceu17-4.jpg) center center no-repeat;
+	background-size: cover;
+
+	&:before {
+
+		background-color: rgba(255,255,255,.9);
+
+		content: "";
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+	}
+
+	// background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/illustration-scenery.png') center 30px repeat-x;
 
 	@media only screen and (min-resolution: 192dpi),
 	only screen and (min-resolution: 2dppx) {
-		background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/illustration-scenery@2x.png') center 30px repeat-x;
-		background-size: 1183px 271px;
+		// background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/illustration-scenery@2x.png') center 30px repeat-x;
+		// background-size: 1183px 271px;
 	}
 
 	@include respond-above( 'large' ) {
-		background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-mobile.png') right bottom no-repeat,
-					$offwhite url('https://europe.wordcamp.org/2016/files/2015/11/illustration-scenery.png') center 100px repeat-x;
-		background-size: auto, auto;
-		background-attachment: scroll, fixed;
+		// background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-mobile.png') right bottom no-repeat,
+					// $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/illustration-scenery.png') center 100px repeat-x;
+		// background-size: auto, auto;
+		// background-attachment: scroll, fixed;
 	}
 
 	@media only screen and ( min-width: 960px ) and (min-resolution: 192dpi),
 	only screen and ( min-width: 960px ) and (min-resolution: 2dppx) {
-		background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-mobile@2x.png') right bottom no-repeat,
-					$offwhite url('https://europe.wordcamp.org/2016/files/2015/11/illustration-scenery@2x.png') left 100px repeat-x;
-		background-size: 640px 560px, 1183px 271px;
-		background-attachment: scroll, fixed;
+		// background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-mobile@2x.png') right bottom no-repeat,
+					// $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/illustration-scenery@2x.png') left 100px repeat-x;
+		// background-size: 640px 560px, 1183px 271px;
+		// background-attachment: scroll, fixed;
 	}
 }
 
@@ -41,49 +60,50 @@
 
 	#page,
 	#masthead {
-		height: 100%;
+		// height: 100%;
+		// min-height: 300px;
 	}
 
 	#masthead {
-		min-height: 610px;
+		// min-height: 610px;
 	}
 
 	#masthead hgroup {
-		height: 100%;
-		background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-mobile.png') center bottom no-repeat,
-					$offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-scenery-mobile.png') center bottom repeat-x;
-		background-size: auto, auto;
-		background-attachment: scroll, fixed;
+		// height: 100%;
+		// background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-mobile.png') center bottom no-repeat,
+		// 			$offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-scenery-mobile.png') center bottom repeat-x;
+		// background-size: auto, auto;
+		// background-attachment: scroll, fixed;
 
 		@media only screen and (min-resolution: 192dpi),
 		only screen and (min-resolution: 2dppx) {
-			background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-mobile@2x.png') center bottom no-repeat,
-						$offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-scenery-mobile@2x.png') center bottom repeat-x;
-			background-size: 640px 560px, 640px 560px;
-			background-attachment: scroll, fixed;
+			// background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-mobile@2x.png') center bottom no-repeat,
+			// 			$offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-scenery-mobile@2x.png') center bottom repeat-x;
+			// background-size: 640px 560px, 640px 560px;
+			// background-attachment: scroll, fixed;
 		}
 
 		@media only screen and (max-width: 720px) and (orientation: landscape),
 				only screen and (max-width: 720px) and (orientation: landscape) and (min-resolution: 192dpi),
 				only screen and (max-width: 720px) and (orientation: landscape) and (min-resolution: 2dppx)  {
-					background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/illustration-scenery@2x.png') center 100% repeat-x;
-					background-size: 1183px 271px;
-					background-attachment: fixed;
+					// background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/illustration-scenery@2x.png') center 100% repeat-x;
+					// background-size: 1183px 271px;
+					// background-attachment: fixed;
 		}
 
 		@media screen and ( min-width: 600px ) {
-			background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration.png') center bottom no-repeat,
-						$offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-scenery.png') center bottom repeat-x;
-			background-size: auto, auto;
-			background-attachment: scroll, fixed;
+			// background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration.png') center bottom no-repeat,
+			// 			$offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-scenery.png') center bottom repeat-x;
+			// background-size: auto, auto;
+			// background-attachment: scroll, fixed;
 		}
 
 		@media only screen and ( min-width: 600px ) and (min-resolution: 192dpi),
 		only screen and ( min-width: 600px ) and (min-resolution: 2dppx) {
-			background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration@2x.png') center bottom no-repeat,
-						$offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-scenery@2x.png') center bottom repeat-x;
-			background-size: 1183px 560px, 1183px 560px;
-			background-attachment: scroll, fixed;
+			// background: $offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration@2x.png') center bottom no-repeat,
+			// 			$offwhite url('https://europe.wordcamp.org/2016/files/2015/11/home-illustration-scenery@2x.png') center bottom repeat-x;
+			// background-size: 1183px 560px, 1183px 560px;
+			// background-attachment: scroll, fixed;
 		}
 	}
 
@@ -107,16 +127,20 @@
 .site-header hgroup {
 	text-align: center;
 	padding-top: 140px;
+	padding-top: 40px;
 	border-bottom: 2px solid $blue;
+	padding-bottom: 40px;
 
 	@media screen and ( min-width: 600px ) {
 		border: none;
 	}
 
 	@include respond-above( 'large' ) {
-		padding-top: 100px;
-		text-align: left;
+		// padding-top: 100px;
+		padding-top: 60px;
+		padding-bottom: 120px;
 		padding-left: 100px;
+		text-align: left;
 	}
 }
 
@@ -128,9 +152,12 @@
 		position: relative;
 		display: block;
 		text-decoration: none;
+		margin-top: 120px;
 
 		@include respond-above( 'large' ) {
+			padding-top: 0;
 			padding-left: 80px;
+			margin-top: 0;
 		}
 
 		&::first-letter {
@@ -147,7 +174,8 @@
 			height: 100px;
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
-			background-image: url('https://europe.wordcamp.org/2016/files/2015/12/logo-wceu-2016.png');
+			background-image: url('http://2017.europe.wordcamp.org/files/2016/09/logo-wceu-2017.png');
+			// background-image: url('https://europe.wordcamp.org/2016/files/2015/12/logo-wceu-2016.png');
 
 			@include respond-above( 'large' ) {
 				left: 0;
@@ -164,8 +192,9 @@
 .site-description {
 	@include responsive-text-size('deca');
 	font-weight: 300;
+	position: relative;
 	margin: 0;
-	color: $blue;
+	color: $darkgrey;
 
 	@include respond-above( 'large' ) {
 		padding-left: 80px;
@@ -173,21 +202,26 @@
 }
 
 .home .site-header hgroup {
+
 	padding-top: 100px;
 
 	@include respond-above( 'large' ) {
 		text-align: center;
 		padding-left: 0;
+		padding-top: 40px;
+		padding-bottom: 120px;
 	}
 }
 
 .home .site-title {
-	margin-top: 100px;
 
 	a {
 
+		margin-top: 125px;
+
 		@include respond-above( 'large' ) {
 			padding-left: 0;
+			margin-top: 180px;
 		}
 
 		&:before {

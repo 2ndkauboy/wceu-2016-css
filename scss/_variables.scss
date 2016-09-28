@@ -1,15 +1,25 @@
 
 // colours
 
-$red: blue; // #cc3333
+// french flag temp colors
+// local colours
+$french-blue: #002395;
+$french-red: #ed2939;
+
+$red: #cc3333; // #cc3333
 $offwhite: #EEF2F2;
 $green: #75baac;
 $blue: #2F3436;
 $gold: #FFBE46;
 
-$grey: #cccccc;
+$red: $french-red;
+$green: $french-red;
+$blue: $french-blue;
 
-$body-font-colour: $blue;
+$grey: #cccccc;
+$darkgrey: #444;
+
+$body-font-colour: #333;
 
 $link-colour: $red;
 $link-hover-colour: $green;
