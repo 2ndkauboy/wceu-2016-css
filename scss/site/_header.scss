@@ -23,25 +23,30 @@
 		content: "";
 
 		position: absolute;
-		top: -230px;
-		left: -60px;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 
-		width: 460px;
-		height: 460px;
+		@include respond-above( 'large' ) {
 
-		border-radius: 50%;
-
-		.home & {
+			// top: -230px;
+			// left: -60px;
 
 			top: 50%;
 			left: 50%;
 			right: auto;
 			bottom: auto;
 
-			margin-top: -60px;
+			margin-top: -90px;
 
+			width: 460px;
+			height: 460px;
+
+			border-radius: 50%;
 			transform: translate(-50%, -50%);
 
+			margin-top: -60px;
 
 		}
 
@@ -153,13 +158,23 @@
 		border: none;
 	}
 
+	// @include respond-above( 'large' ) {
+	// 	// padding-top: 100px;
+	// 	padding-top: 60px;
+	// 	padding-bottom: 120px;
+	// 	padding-left: 100px;
+	// 	text-align: left;
+	// }
+
+	padding-top: 100px;
+
 	@include respond-above( 'large' ) {
-		// padding-top: 100px;
-		padding-top: 60px;
+		text-align: center;
+		padding-left: 0;
+		padding-top: 40px;
 		padding-bottom: 120px;
-		padding-left: 100px;
-		text-align: left;
 	}
+
 }
 
 .site-title  {
@@ -167,10 +182,12 @@
 	margin: 0;
 
 	a {
+
 		position: relative;
 		display: block;
 		text-decoration: none;
-		margin-top: 120px;
+		margin-top: 125px;
+		font-weight: bold;
 
 		&:hover,
 		&:focus,
@@ -182,8 +199,8 @@
 
 		@include respond-above( 'large' ) {
 			padding-top: 0;
-			padding-left: 80px;
-			margin-top: 0;
+			padding-left: 0;
+			margin-top: 180px;
 		}
 
 		&::first-letter {
@@ -201,58 +218,6 @@
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
 			background-image: url('http://2017.europe.wordcamp.org/files/2016/09/logo-wceu-2017.png');
-			// background-image: url('https://europe.wordcamp.org/2016/files/2015/12/logo-wceu-2016.png');
-
-			@include respond-above( 'large' ) {
-				left: 0;
-				bottom: auto;
-				top: -20px;
-				width: 132px;
-				height: 108px;
-				margin-left: -66px;
-			}
-		}
-	}
-}
-
-.site-description {
-	@include responsive-text-size('deca');
-	font-weight: normal;
-	position: relative;
-	margin: 0;
-	// color: $darkgrey;
-	color: #fff;
-
-	@include respond-above( 'large' ) {
-		padding-left: 80px;
-	}
-}
-
-.home .site-header hgroup {
-
-	padding-top: 100px;
-
-	@include respond-above( 'large' ) {
-		text-align: center;
-		padding-left: 0;
-		padding-top: 40px;
-		padding-bottom: 120px;
-	}
-}
-
-.home .site-title {
-
-	a {
-
-		margin-top: 125px;
-
-		@include respond-above( 'large' ) {
-			padding-left: 0;
-			margin-top: 180px;
-		}
-
-		&:before {
-			top: -110px;
 
 			@include respond-above( 'large' ) {
 				top: -150px;
@@ -263,13 +228,15 @@
 			}
 		}
 	}
+
 }
 
-.home .site-description {
-
-	@include respond-above( 'large' ) {
-		padding-left: 0;
-	}
+.site-description {
+	@include responsive-text-size('deca');
+	font-weight: normal;
+	position: relative;
+	margin: 0;
+	color: #fff;
 }
 
 // header widgets
