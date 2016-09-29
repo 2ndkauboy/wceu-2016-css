@@ -89,7 +89,7 @@ a img.aligncenter {
 		display: block;
 		width: auto;
 		padding: 7px 15px;
-		// font-style: italic;
+		font-style: italic;
 		color: $darkgrey;
 
 		@include respond-above( 'small' ) {
@@ -97,8 +97,8 @@ a img.aligncenter {
 		}
 
 		@include respond-above( 'medium') {
-			position: absolute;
-			bottom: -33px;
+			// position: absolute;
+			// bottom: -33px;
 		};
 	}
 }
