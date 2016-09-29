@@ -102,8 +102,9 @@
 // desktop navigation
 
 .main-navigation {
-	border-top: 2px solid $blue;
-	height: 62px;
+	// border-top: 2px solid $blue;
+	// height: 62px;
+	height: 60px;
 
 	.assistive-text {
 		@include sr-only();
