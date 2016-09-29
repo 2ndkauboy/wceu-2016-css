@@ -75,11 +75,12 @@ body {
 		color: $grey;
 
 		a {
-			color: $green;
+			color: $link-colour;
 		}
 
-		a:hover {
-			color: $blue;
+		a:hover,
+		&:focus {
+			color: $link-hover-colour;
 		}
 	}
 

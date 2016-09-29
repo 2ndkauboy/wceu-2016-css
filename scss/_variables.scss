@@ -1,12 +1,8 @@
 
 // colours
 
-// french flag temp colors
-// local colours
-$french-blue: #002395;
-$french-red: #ed2939;
-
 // temp colours
+$darkerblue: #2f3436;
 $darkblue: #0c3a51;
 $blue: #7194a8;
 $lightblue: #d7e9f2;
@@ -14,23 +10,23 @@ $darkgrey: #1d242a;
 $yellow: #dac04a;
 $white: #ffffff;
 
-$red: #cc3333; // #cc3333
+// $red: #cc3333; // #cc3333
 $offwhite: #EEF2F2;
-$green: #75baac;
-$blue: #2F3436;
-$gold: #FFBE46;
-
+// $green: #75baac;
+// $blue: #2F3436;
 $red: $darkblue;
 $green: $yellow;
-$blue: $blue;
-
+$gold: #FFBE46;
 $grey: #cccccc;
 $darkgrey: #444;
 
 $body-font-colour: $darkgrey;
 
-$link-colour: $yellow;
-$link-hover-colour: $darkblue;
+$link-colour: $blue;
+$link-hover-colour: mix($blue, #000, 60%);
+
+$link-colour-alt: $yellow;
+$link-hover-colour-alt: $darkblue;
 
 // responsive breakpints
 

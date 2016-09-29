@@ -40,13 +40,13 @@
 
 	a:hover,
 	a:focus {
-		color: $blue;
+		color: $darkerblue;
 		background-color: #fff;
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a {
-		background-color: $blue;
+		background-color: $darkerblue;
 		color: #fff;
 	}
 }
@@ -102,7 +102,7 @@
 // desktop navigation
 
 .main-navigation {
-	// border-top: 2px solid $blue;
+	// border-top: 2px solid $darkerblue;
 	// height: 62px;
 	height: 60px;
 
@@ -162,7 +162,7 @@
 				}
 
 				a {
-					color: $blue;
+					color: $darkerblue;
 
 					&:hover {
 						color: $green;
@@ -198,14 +198,14 @@
 
 	a:hover,
 	a:focus {
-		color: $blue;
+		color: $darkerblue;
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
-		background-color: $blue;
+		background-color: $darkerblue;
 		color: #fff;
 	}
 }
@@ -231,7 +231,7 @@
 		.sub-menu {
 			display: table;
 			table-layout: fixed;
-			background-color: $blue;
+			background-color: $darkerblue;
 			border-radius: 0;
 			z-index: 20;
 

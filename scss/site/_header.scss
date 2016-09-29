@@ -188,12 +188,13 @@
 		text-decoration: none;
 		margin-top: 125px;
 		font-weight: bold;
+		color: $link-colour-alt!important;
 
 		&:hover,
 		&:focus,
 		&:active {
 
-			color: #fff;
+			color: #fff!important;
 
 		}
 
