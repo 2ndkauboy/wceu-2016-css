@@ -6,20 +6,28 @@
 $french-blue: #002395;
 $french-red: #ed2939;
 
+// temp colours
+$darkblue: #0c3a51;
+$blue: #7194a8;
+$lightblue: #d7e9f2;
+$darkgrey: #1d242a;
+$yellow: #dac04a;
+$white: #ffffff;
+
 $red: #cc3333; // #cc3333
 $offwhite: #EEF2F2;
 $green: #75baac;
 $blue: #2F3436;
 $gold: #FFBE46;
 
-$red: $french-red;
-$green: $french-red;
-$blue: $french-blue;
+$red: $darkblue;
+$green: $yellow;
+$blue: $blue;
 
 $grey: #cccccc;
 $darkgrey: #444;
 
-$body-font-colour: #333;
+$body-font-colour: $darkgrey;
 
 $link-colour: $red;
 $link-hover-colour: $green;
