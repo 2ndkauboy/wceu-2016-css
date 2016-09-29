@@ -90,10 +90,10 @@ a img.aligncenter {
 		width: auto;
 		padding: 7px 15px;
 		font-style: italic;
-		color: $darkgrey;
+		color: #999;
 
 		@include respond-above( 'small' ) {
-			padding: 11px 30px;
+			// padding: 11px 30px;
 		}
 
 		@include respond-above( 'medium') {
