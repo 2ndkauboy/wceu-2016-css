@@ -73,6 +73,7 @@ a img.aligncenter {
 .wp-caption {
 	text-align: center;
 	position: relative;
+	border: none;
 	width: 100% !important;
 
 	@include respond-above( 'medium') {
@@ -82,13 +83,14 @@ a img.aligncenter {
 
 	.wp-caption-text {
 		@include responsive-text-size('deci');
-		border-radius: 30px;
-		background: $gold;
+		// border-radius: 30px;
+		// background: $gold;
+		text-align: center;
 		display: block;
 		width: auto;
 		padding: 7px 15px;
-		font-style: italic;
-		color: #fff;
+		// font-style: italic;
+		color: $darkgrey;
 
 		@include respond-above( 'small' ) {
 			padding: 11px 30px;
