@@ -26,6 +26,10 @@ a:visited:hover {
 	color: $link-hover-colour;
 }
 
+.entry-content a {
+  text-decoration: underline;
+}
+
 // images
 
 a img {
