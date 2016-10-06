@@ -208,6 +208,22 @@
 		background-color: $darkerblue;
 		color: #fff;
 	}
+
+	// Copied to affect all menu items on the site
+	@media screen and ( min-width: 600px ) and ( max-width: 1050px ) {
+		.use-title-for-small a {
+			overflow: hidden;
+			text-indent: -9999px;
+			&:after {
+				content: attr( title );
+				float: left;
+				text-indent: 0;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+
 }
 
 // fixed menu
