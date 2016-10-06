@@ -131,7 +131,7 @@
 		padding: 0;
 		list-style: none;
 		display: table-row;
-		@include respond-above( 'x-large' ) {
+		@include respond-above( 'large' ) {
 			// table-layout: fixed;
 			display: flex;
 			justify-content: space-around;
@@ -141,7 +141,7 @@
 			display: table-cell;
 			text-align: center;
 			position: relative;
-			@include respond-above( 'x-large' ) {
+			@include respond-above( 'large' ) {
 				display: block;
 				width: 100%;
 			}
