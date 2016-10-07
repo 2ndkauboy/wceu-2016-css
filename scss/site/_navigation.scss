@@ -130,25 +130,33 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		display: inline-block;
-		text-align: center;
 		// display: table-row;
+		display: table;
 		@include respond-above( 'large' ) {
 			// table-layout: fixed;
 			// display: flex;
 			// justify-content: space-around;
 			// align-content: stretch;
+			// display: table;
 		}
+
+		@media screen and ( min-width: 1400px ) {
+			display: flex;
+			justify-content: space-around;
+			align-content: stretch;
+		}
+
 		> li {
-			// display: table-cell;
+			display: table-cell;
 			text-align: center;
 			position: relative;
-			display: inline-block;
 			@include respond-above( 'large' ) {
 				// display: block;
 				// width: 100%;
-				display: inline-block;
-				width: auto;
+			}
+			@media screen and ( min-width: 1400px ) {
+				display: block;
+				width: 100%;
 			}
 			.sub-menu {
 				background: $offwhite;
@@ -197,12 +205,7 @@
 		padding: 17px 7px;
 
 		@include respond-above( 'large' ) {
-			// padding: 15px 7px;
-			padding: 15px 12px;
-		}
-		@include respond-above( 'x-large' ) {
-			padding-left: 16px;
-			padding-right: 16px;
+			padding: 15px 7px;
 		}
 	}
 
