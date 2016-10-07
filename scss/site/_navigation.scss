@@ -150,6 +150,7 @@
 			display: table-cell;
 			text-align: center;
 			position: relative;
+			float: none;
 			@include respond-above( 'large' ) {
 				// display: block;
 				// width: 100%;
