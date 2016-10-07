@@ -130,20 +130,25 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		display: table-row;
+		display: inline-block;
+		text-align: center;
+		// display: table-row;
 		@include respond-above( 'large' ) {
 			// table-layout: fixed;
-			display: flex;
-			justify-content: space-around;
-			align-content: stretch;
+			// display: flex;
+			// justify-content: space-around;
+			// align-content: stretch;
 		}
 		> li {
-			display: table-cell;
+			// display: table-cell;
 			text-align: center;
 			position: relative;
+			display: inline-block;
 			@include respond-above( 'large' ) {
-				display: block;
-				width: 100%;
+				// display: block;
+				// width: 100%;
+				display: inline-block;
+				width: auto;
 			}
 			.sub-menu {
 				background: $offwhite;
@@ -192,7 +197,12 @@
 		padding: 17px 7px;
 
 		@include respond-above( 'large' ) {
-			padding: 15px 7px;
+			// padding: 15px 7px;
+			padding: 15px 12px;
+		}
+		@include respond-above( 'x-large' ) {
+			padding-left: 16px;
+			padding-right: 16px;
 		}
 	}
 
@@ -210,7 +220,7 @@
 	}
 
 	// Copied to affect all menu items on the site
-	@media screen and ( min-width: 600px ) and ( max-width: 1050px ) {
+	@media screen and ( min-width: 600px ) and ( max-width: 1200px ) {
 		.use-title-for-small a {
 			overflow: hidden;
 			text-indent: -9999px;
@@ -267,7 +277,7 @@
 			border-radius: 0;
 		}
 	}
-	@media screen and ( min-width: 600px ) and ( max-width: 1050px ) {
+	@media screen and ( min-width: 600px ) and ( max-width: 1200px ) {
 		.use-title-for-small a {
 			overflow: hidden;
 			text-indent: -9999px;
