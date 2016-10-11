@@ -2,10 +2,8 @@
 // sidebar
 
 #secondary {
-	// display: none;
-}
 
-.jetpack_subscription_widget {
+	margin-top: 2em;
 
 	background: $offwhite;
 
@@ -15,11 +13,15 @@
 
 	&:before {
 
-		position: relative;
+		position: absolute;
 		z-index: -1;
+		top: 0;
+		bottom: 0;
+		left: -1000px;
+		right: -1000px;
 
-		width: 300%;
-		margin-left: -100%;
+		// width: 300%;
+		// margin-left: -100%;
 
 		background: $offwhite;
 
@@ -27,18 +29,22 @@
 
 	}
 
+}
+
+.jetpack_subscription_widget {
+
+
+
 	.widget-title {
 
-		@include responsive-text-size('deca');
-		letter-spacing: -1px;
 
-		margin-bottom: 1em;
 
 	}
 
 	.subscribe-text {
 
 		margin-bottom: 1em;
+		text-align: center;
 
 		p {
 
@@ -48,18 +54,41 @@
 
 	}
 
-	.subscribe-email {
+	#subscribe-email {
 
 		display: inline-block;
 		width: 200px;
 
 	}
 
-	.subscribe-submit {
+	#subscribe-submit {
 
 		display: inline-block;
 		width: auto;
 
 	}
+
+}
+
+.widget {
+
+	.widget-title {
+
+		margin-top: 0;
+		margin-bottom: 16px;
+
+		@include responsive-text-size('hecto');
+		letter-spacing: -1px;
+
+		text-align: center;
+
+	}
+
+}
+
+.list-social {
+
+	.social-twitter {}
+	.social-facebook {}
 
 }
