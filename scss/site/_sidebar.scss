@@ -1,6 +1,14 @@
 
 // sidebar
 
+.site {
+
+	// Hide the #secondary:before element with a negative left/right value
+	// that makes it go outside of viewport
+	overflow: hidden;
+
+}
+
 #secondary {
 
 	position: relative;
