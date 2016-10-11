@@ -4,3 +4,62 @@
 #secondary {
 	// display: none;
 }
+
+.jetpack_subscription_widget {
+
+	background: $offwhite;
+
+	padding: 2em;
+
+	position: relative;
+
+	&:before {
+
+		position: relative;
+		z-index: -1;
+
+		width: 300%;
+		margin-left: -100%;
+
+		background: $offwhite;
+
+		content: "";
+
+	}
+
+	.widget-title {
+
+		@include responsive-text-size('deca');
+		letter-spacing: -1px;
+
+		margin-bottom: 1em;
+
+	}
+
+	.subscribe-text {
+
+		margin-bottom: 1em;
+
+		p {
+
+			margin: 0;
+
+		}
+
+	}
+
+	.subscribe-email {
+
+		display: inline-block;
+		width: 200px;
+
+	}
+
+	.subscribe-submit {
+
+		display: inline-block;
+		width: auto;
+
+	}
+
+}
