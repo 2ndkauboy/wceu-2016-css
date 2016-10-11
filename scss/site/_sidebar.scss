@@ -41,6 +41,12 @@
 
 	}
 
+	form {
+
+		text-align: center;
+
+	}
+
 	#subscribe-text {
 
 		margin-bottom: 1em;
@@ -57,12 +63,21 @@
 	input[type="email"],
 	input[type="submit"] {
 
-		padding: 8px 10px;
+		padding: 7px 15px;
+		border: 1px solid transparent;
 
 		font-size: 16px;
 		line-height: 24px;
 
-		border: 1px solid transparent;
+		text-shadow: none;
+
+		@include respond-above( 'small' ) {
+
+			padding: 11px 30px;
+
+			font-size: 18px;
+
+		}
 
 	}
 
@@ -92,6 +107,7 @@
 
 			color: $offwhite;
 			background-color: $blue;
+			font-weight: bold;
 
 		}
 
@@ -120,6 +136,8 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
+	text-align: center;
 
 	li {
 
