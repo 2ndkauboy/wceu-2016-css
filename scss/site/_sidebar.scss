@@ -41,7 +41,7 @@
 
 	}
 
-	.subscribe-text {
+	#subscribe-text {
 
 		margin-bottom: 1em;
 		text-align: center;
@@ -54,10 +54,31 @@
 
 	}
 
+	input[type="email"],
+	input[type="submit"] {
+
+		padding: 8px 10px;
+
+		font-size: 16px;
+		line-height: 24px;
+
+		border: 1px solid transparent;
+
+	}
+
 	#subscribe-email {
 
 		display: inline-block;
 		width: 200px;
+		margin: 0;
+
+		input[type="email"] {
+
+			color: $darkgrey;
+			background-color: #fff;
+
+
+		}
 
 	}
 
@@ -65,6 +86,14 @@
 
 		display: inline-block;
 		width: auto;
+		margin: 0;
+
+		input[type="submit"] {
+
+			color: $offwhite;
+			background-color: $blue;
+
+		}
 
 	}
 
@@ -87,6 +116,23 @@
 }
 
 .list-social {
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+
+		display: inline-block;
+		margin: 0 .5em;
+
+	}
+
+	strong {
+
+		color: mix($blue, #000, 80%);
+
+	}
 
 	.social-twitter {}
 	.social-facebook {}
