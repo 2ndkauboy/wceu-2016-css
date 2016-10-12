@@ -14,29 +14,63 @@
 	position: relative;
 
 	margin-top: 2em;
-	padding: 2em 0;
 
-	background: $offwhite;
-
-	&:before {
-
-		position: absolute;
-		z-index: -1;
-		top: 0;
-		bottom: 0;
-		left: -1000px;
-		right: -1000px;
-
-		background: $offwhite;
-
-		content: "";
-
-	}
 
 	@include respond-above( 'small' ) {
 
 		margin-top: 4em;
-		padding: 3em 0;
+		// padding: 3em 0;
+
+	}
+
+	.widget {
+
+		position: relative;
+
+		padding: 2em 0;
+
+		&:before {
+
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			bottom: 0;
+			left: -1000px;
+			right: -1000px;
+
+			background: $offwhite;
+
+			content: "";
+
+		}
+
+		@include respond-above( 'small' ) {
+
+			padding: 3em 0;
+
+		}
+
+	}
+
+	/* Backgrounds */
+
+	.jetpack_subscription_widget {
+
+		&:before {
+
+			background: $offwhite;
+
+		}
+
+	}
+
+	.widget_text {
+
+		&:before {
+
+			background: $lightblue;
+
+		}
 
 	}
 
@@ -44,11 +78,7 @@
 
 .jetpack_subscription_widget {
 
-
-
 	.widget-title {
-
-
 
 	}
 
