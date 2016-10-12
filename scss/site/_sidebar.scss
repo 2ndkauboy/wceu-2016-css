@@ -126,7 +126,7 @@
 	#subscribe-email {
 
 		display: inline-block;
-		width: 200px;
+		width: 220px;
 		margin: 0;
 
 		input[type="email"] {
@@ -139,7 +139,7 @@
 		}
 
 		@include respond-above( 'medium' ) {
-			width: 300px;
+			width: 320px;
 		}
 
 	}
@@ -147,8 +147,8 @@
 	#subscribe-submit {
 
 		display: inline-block;
-		width: auto;
-		margin: 0 0 0 1em;
+		width: 220px;
+		margin: .25em 0 0 0;
 
 		input[type="submit"] {
 
@@ -156,6 +156,11 @@
 			background-color: $blue;
 			font-weight: bold;
 
+		}
+
+		@include respond-above( 'medium' ) {
+			width: auto;
+			margin: 0 0 0 1em;
 		}
 
 	}
