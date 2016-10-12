@@ -147,7 +147,7 @@
 	#subscribe-submit {
 
 		display: inline-block;
-		width: 220px;
+		width: auto;
 		margin: .25em 0 0 0;
 
 		input[type="submit"] {
@@ -155,12 +155,15 @@
 			color: $offwhite;
 			background-color: $blue;
 			font-weight: bold;
+			min-width: 220px;
 
 		}
 
 		@include respond-above( 'medium' ) {
-			width: auto;
 			margin: 0 0 0 1em;
+			input[type="submit"] {
+				width: auto;
+			}
 		}
 
 	}
