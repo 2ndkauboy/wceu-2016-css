@@ -1,6 +1,255 @@
 
 // sidebar
 
+.site {
+
+	// Hide the #secondary:before element with a negative left/right value
+	// that makes it go outside of viewport
+	overflow: hidden;
+
+}
+
 #secondary {
-	display: none;
+
+	position: relative;
+
+	margin-top: 2em;
+
+
+	@include respond-above( 'small' ) {
+
+		margin-top: 4em;
+		// padding: 3em 0;
+
+	}
+
+	.widget {
+
+		position: relative;
+
+		padding: 2em 0;
+		margin: 0;
+
+		&:before {
+
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			bottom: 0;
+			left: -1000px;
+			right: -1000px;
+
+			background: $offwhite;
+
+			content: "";
+
+		}
+
+		@include respond-above( 'small' ) {
+
+			padding: 3em 0;
+
+		}
+
+	}
+
+	/* Backgrounds */
+
+	.jetpack_subscription_widget {
+
+		&:before {
+
+			background: $offwhite;
+
+		}
+
+	}
+
+	.widget_text {
+
+		&:before {
+
+			background: $lightblue;
+
+		}
+
+	}
+
+}
+
+.jetpack_subscription_widget {
+
+	.widget-title {
+
+	}
+
+	form {
+
+		text-align: center;
+
+	}
+
+	#subscribe-text {
+
+		margin-bottom: 1em;
+		text-align: center;
+
+		p {
+
+			margin: 0;
+
+		}
+
+	}
+
+	input[type="email"],
+	input[type="submit"] {
+
+		padding: 7px 15px!important;
+		border: 1px solid transparent;
+
+		font-size: 16px;
+		line-height: 24px;
+
+		text-shadow: none;
+
+		@include respond-above( 'small' ) {
+
+			padding: 11px 30px!important;
+
+			font-size: 18px;
+
+		}
+
+	}
+
+	#subscribe-email {
+
+		display: inline-block;
+		width: 220px;
+		margin: 0;
+
+		input[type="email"] {
+
+			color: $darkgrey;
+			background-color: #fff;
+
+			width: 100%;
+
+		}
+
+		@include respond-above( 'medium' ) {
+			width: 320px;
+		}
+
+	}
+
+	#subscribe-submit {
+
+		display: inline-block;
+		width: auto;
+		margin: .25em 0 0 0;
+
+		input[type="submit"] {
+
+			color: $offwhite;
+			background-color: $blue;
+			font-weight: bold;
+			min-width: 220px;
+
+		}
+
+		@include respond-above( 'medium' ) {
+			margin: 0 0 0 1em;
+			input[type="submit"] {
+				width: auto;
+			}
+		}
+
+	}
+
+}
+
+.widget {
+
+	.widget-title {
+
+		margin-top: 0;
+		margin-bottom: 16px;
+
+		@include responsive-text-size('hecto');
+		letter-spacing: -1px;
+
+		text-align: center;
+
+	}
+
+}
+
+.list-social {
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	text-align: center;
+
+	li {
+
+		display: inline-block;
+		margin: 0 .5em;
+
+	}
+
+	strong {
+
+		color: mix($blue, #000, 80%);
+
+	}
+
+	a {
+
+		&:hover,
+		&:focus,
+		&:active {
+
+			color: $darkblue;
+
+			strong {
+
+				color: $darkblue;
+
+			}
+
+		}
+
+	}
+
+	.social-twitter a,
+	.social-facebook a {
+
+		display: block;
+		padding-left: 30px;
+		background-position: 0 50%;
+		background-repeat: no-repeat;
+		background-size: 24px;
+
+	}
+
+	.social-twitter a {
+
+		background-image: url(http://2017.europe.wordcamp.org/files/2016/10/icon-twitter.png);
+
+		// background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAABD9JREFUaAXtWF1oFFcUPufOzjbW7KY1SlUo+KCUakMthShuEgui9iWCGxcaaIsQTJSID4VWioJ50BehP1ZoFdrqi6CN2fSllcZaVpONpWqpWH1QQfyL2qSJ7kokuzv3eMZ0dDfO7ty7YkGcgd1759zvfPee7/7MmQHwL18BXwFfAV8BXwFfAV+B51cB/L9Cn1ofnTEmYQsQLSfAmQA0goAn0YBvUr3xn/LHMe2d2PSxrDUrlYz/nm93qysF8HZrq3nh7FA7E37pRuJlq6yPrkILdhPQFDcsIu4NvmBszmSsWpDQSAjNBtCKO8nuw274fJtSAJWRVVEgqwsFbk/3xTfmE3jVw/WxWimtflbe8MI+bEc8kO7raubA6KGtSEUUsReYBVhv2gaS9EnloqYdHR0dSn7zYrEgydwercEDZlnV21WRpvXhupXtBQNxuVEaiCTx0iNfueGzntPHX26I1Tyyudeu3rSWEsFc99ZiVjKJqI2X0YcSAz8UQzl2pQAQ5VXHwS55XmuzOesUK7R1ZmPri/ltBXULFhbcK94gQjw0Zeriu72dg14uAS+A3W5Q4Ncc5CZAyZQSNqWHBzeEItEDYIg96WMH+wtAAqp5U2pdvO6/S/V1rVFZ/zax0ia2gaFFKxOs/GK7XuziY/EiT/0pntbzQHieT51l/PugGN7NjkK08Ab+3q3NzaY0A7ajgGCLhMyfHETYjci28WBn89/scdEZWdaF/+i4Ke0BXiK7JOTWoICdgHyiP8ULDXlLh15xBijF6m6kB9KWq6zasIK54HU15DhKaQaEMH7RIS0Xyxv30lBy/4COv1IAd3oPHmHyn3WIy8T26PopBWCTmia08fo/q9uBDp5APL0AhhPxa+YkI8JB7OPTN6MzMCUs4o3p4RkFWamKn/IM2GTynpwjkI7z02M3346qdKCKQaDPLx7aOaaKd3CKp9A43BJiFCz6ik98rcCdzoqVnDqMVJiBXeligBJ29RSXSTJXzg0GX51bzQEsKMGp3cTPl/aRY11/aDuyg3Iq4ZBzpohVddGvJcFax/ZEJef+d5Px98rl0F4KdpKVSnavE0Is5PA77fyn3Kezfe7zwdBW7uBtP+0ZmNgZpxktvKS+4Lw/NLGt1D0HfsGogKW3f4tfLoXzais7gMqGaANnRZ/yknrXq5PH2hH+mjwZlt/q6dZK3B7jYYNnAKFI7LWAmTOBjyAp6XUJNJ+/KjTya+I8N8LSNpTc4bdm1aSPhw/tS5XGqrV6HqOmYYxmM9Y2Avk+U/4XsH5Cx0vmBJrQnjoaP6E2NDWU5ww4NOGGpjmUgxYOZDXbXnHspUom/5c3+I/8NaPzoyU1h/ljgOb7WSn28TblABwq+4vEjiNn3sgS1fHTcz5InAZI1Twn/J6AA2y7zmoP8Anz91uBmkQi0THxXdSh8ktfAV8BXwFfAV8BX4FnXoH7U59DsoH1AsAAAAAASUVORK5CYII=);
+
+	}
+
+	.social-facebook a {
+
+		background-image: url(http://2017.europe.wordcamp.org/files/2016/10/icon-facebook.png);
+
+		// background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAActJREFUaAXtV71KA0EQnlmDIiGkEVQEEUxjJ5ouWmpvxBRCaiufwAcRUthYBkzhK2iXtFoHgyAqIslhobfjGr3kTHLk7maPCM41Nzs7f983s/cDIJcwIAwIA8LAf2YAkwSfLeyXNOhDIFwnpAUgmBnMhwiN9nUtP6gPu06FNYxiN79bTjuOU3NJ73z7EZjiE7kSAeA4nTNT8E/xidTdC6p6kiUhu13cMMWXLIUbG8Y6ACIqjs1q0cD6CGnCXNDAI2ATFJ0CqJc+Bnrsy9El6wAQaCnwvCo8bl9dXEYvM9jD+giZVLNB6RSo+6C9uPokAMStJZYfe4SyWweb/sxau+mgM0Barxl7v3lXzizCTatafRvaCKFgA3D1Rz1Enq6JeSufg9ZD5p1nXDHK5tBGCMUfGCHUq7m52Gdj8gAQHhqVynsIskeaTBwAEt2NrCykcuIAAKEVstaRZuxDjEod+SObT4kTIFr26zzZvAfKxv7WW3/dcdp98q+jytb/BzKFvToR/Hq0ekVNqVT+9ara8NY27pMfISYKAcAkkO0uHWBTyAwgHWASyHaXDrApZAaQDjAJZLtLB9gUMgNIB5gEirswIAwIA8KAMMBi4BOf4mA/uYC7mAAAAABJRU5ErkJggg==);
+
+	}
+
 }
