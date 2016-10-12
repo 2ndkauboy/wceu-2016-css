@@ -199,6 +199,24 @@
 
 	}
 
+	a {
+
+		&:hover,
+		&:focus,
+		&:active {
+
+			color: $darkblue;
+
+			strong {
+
+				color: $darkblue;
+
+			}
+
+		}
+
+	}
+
 	.social-twitter a,
 	.social-facebook a {
 
