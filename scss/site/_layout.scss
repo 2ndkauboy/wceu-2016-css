@@ -644,3 +644,12 @@ select[name='tix_payment_method'] {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
+// Hide french posts
+
+.home .post.category-en-francais {
+
+	@include sr-only;
+
+}
