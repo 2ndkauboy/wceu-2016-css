@@ -653,3 +653,11 @@ select[name='tix_payment_method'] {
 	@include sr-only;
 
 }
+
+// Organizers
+
+.wcorg-organizers {
+
+	@include clearfix();
+
+}
