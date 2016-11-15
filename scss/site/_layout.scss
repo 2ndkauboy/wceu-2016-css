@@ -661,7 +661,13 @@ select[name='tix_payment_method'] {
 
 }
 
-.wcorg-organizers {}
+.wcorg-organizers {
+
+	padding-bottom: 1.5em;
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid $lightblue;
+
+}
 
 .wcorg-organizer {
 
@@ -670,13 +676,21 @@ select[name='tix_payment_method'] {
 
 	h2 {
 
-		@include responsive-text-size('deca');
+		@include responsive-text-size('hecto');
+		margin-bottom: .25em;
 
 	}
 
 	p {
 
-		@include responsive-text-size('base');
+		@include responsive-text-size('deci');
+
+		margin-bottom: 0;
+		margin-top: .25em;
+
+		&:first-child {
+			margin-top: 0;
+		}
 
 	}
 
@@ -687,7 +701,7 @@ select[name='tix_payment_method'] {
 		left: 0;
 		width: 100px;
 
-		border-radius: 50%;
+		border-radius: 50% !important;
 
 	}
 
