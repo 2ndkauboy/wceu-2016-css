@@ -228,8 +228,7 @@ body.page {
 // speakers
 // organisers
 
-.wcorg-speaker,
-.wcorg-organizer {
+.wcorg-speaker {
 	margin-bottom: gutter(12) * 3;
 
 	@include respond-above( 'medium' ) {
@@ -659,5 +658,39 @@ select[name='tix_payment_method'] {
 .wcorg-organizers {
 
 	@include clearfix();
+
+}
+
+.wcorg-organizers {}
+
+.wcorg-organizer {
+
+	position: relative;
+	padding-left: 120px;
+
+	h2 {
+
+		@include responsive-text-size('deca');
+
+	}
+
+	p {
+
+		@include responsive-text-size('base');
+
+	}
+
+	img {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100px;
+
+		border-radius: 50%;
+
+	}
+
+	.wcorg-organizer-description {}
 
 }
