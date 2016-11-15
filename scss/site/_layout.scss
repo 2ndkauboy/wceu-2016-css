@@ -672,7 +672,9 @@ select[name='tix_payment_method'] {
 .wcorg-organizer {
 
 	position: relative;
-	padding-left: 120px;
+	padding-left: 96px;
+	min-height: 96px;
+	margin-bottom: 1em;
 
 	h2 {
 
@@ -683,7 +685,8 @@ select[name='tix_payment_method'] {
 
 	p {
 
-		@include responsive-text-size('deci');
+		font-size: 16px;
+		line-height: 1.5;
 
 		margin-bottom: 0;
 		margin-top: .25em;
@@ -699,7 +702,7 @@ select[name='tix_payment_method'] {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100px;
+		width: 80px;
 
 		border-radius: 50% !important;
 
