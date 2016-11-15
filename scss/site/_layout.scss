@@ -667,6 +667,14 @@ select[name='tix_payment_method'] {
 	margin-bottom: 1.5em;
 	border-bottom: 1px solid $lightblue;
 
+	&:last-child {
+
+		padding-bottom: 0;
+		margin-bottom: 0;
+		border-bottom: none;
+
+	}
+
 }
 
 .wcorg-organizer {
