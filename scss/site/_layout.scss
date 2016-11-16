@@ -682,7 +682,10 @@ select[name='tix_payment_method'] {
 	position: relative;
 	padding-left: 64px;
 	min-height: 64px;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 40em;
 
 	@include respond-above( 'small' ) {
 
