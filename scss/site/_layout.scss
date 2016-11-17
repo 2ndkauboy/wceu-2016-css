@@ -228,8 +228,7 @@ body.page {
 // speakers
 // organisers
 
-.wcorg-speaker,
-.wcorg-organizer {
+.wcorg-speaker {
 	margin-bottom: gutter(12) * 3;
 
 	@include respond-above( 'medium' ) {
@@ -651,5 +650,95 @@ select[name='tix_payment_method'] {
 .home .post.category-en-francais {
 
 	@include sr-only;
+
+}
+
+// Organizers
+
+.wcorg-organizers {
+
+	@include clearfix();
+
+}
+
+.wcorg-organizers {
+
+	padding-bottom: 1.5em;
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid $lightblue;
+
+	&:last-child {
+
+		padding-bottom: 0;
+		margin-bottom: 0;
+		border-bottom: none;
+
+	}
+
+}
+
+.wcorg-organizer {
+
+	position: relative;
+	padding-left: 64px;
+	min-height: 64px;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 40em;
+
+	@include respond-above( 'small' ) {
+
+		padding-left: 96px;
+		min-height: 96px;
+
+	}
+
+	h2 {
+
+		@include responsive-text-size('hecto');
+		margin-bottom: .25em;
+
+	}
+
+	p {
+
+		font-size: 14px;
+		line-height: 1.5;
+
+		margin-bottom: 0;
+		margin-top: .25em;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		@include respond-above( 'small' ) {
+
+			font-size: 16px;
+			line-height: 1.5;
+
+		}
+
+	}
+
+	img {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 48px;
+
+		border-radius: 50% !important;
+
+		@include respond-above( 'small' ) {
+
+			width: 80px;
+
+		}
+
+	}
+
+	.wcorg-organizer-description {}
 
 }
