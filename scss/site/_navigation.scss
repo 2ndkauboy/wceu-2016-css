@@ -168,7 +168,14 @@
 				border-bottom-right-radius: 5px;
 				display: none;
 				position: absolute;
+				top: 100%;
 				width: 100%;
+
+				li {
+					display: block;
+					width: 100%;
+					float: none;
+				}
 
 				li:last-child a {
 					border-bottom-left-radius: 5px;
@@ -177,6 +184,8 @@
 
 				a {
 					color: $darkerblue;
+					display: block;
+					width: 100%;
 
 					&:hover {
 						color: $green;
