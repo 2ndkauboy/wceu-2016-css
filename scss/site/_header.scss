@@ -12,7 +12,7 @@
 	// height: 260px;
 	// background: $offwhite;
 
-	background: url(http://2017.europe.wordcamp.org/files/2016/09/hero-wceu17-4.jpg) center center no-repeat;
+	background: url('https://2017.europe.wordcamp.org/files/2016/09/hero-wceu17-4.jpg') center center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 
@@ -218,7 +218,7 @@
 			height: 100px;
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
-			background-image: url('http://2017.europe.wordcamp.org/files/2016/09/logo-wceu-2017.png');
+			background-image: url('https://2017.europe.wordcamp.org/files/2016/09/logo-wceu-2017.png');
 
 			@include respond-above( 'large' ) {
 				top: -150px;

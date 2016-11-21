@@ -32,7 +32,8 @@ var settings = {
 	// enable the proxied local server for browsersync
 	// static above server must be disabled
 	proxyserver: true,
-	proxylocation: 'wordcamp.w.dev'
+	// proxylocation: 'wordcamp.w.dev'
+	proxylocation: '2014.content.wordcamp.dev/'
 
 };
 
