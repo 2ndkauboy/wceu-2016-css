@@ -200,6 +200,10 @@
 			}
 
 			&:hover {
+				> a {
+					color: $darkerblue;
+					background-color: #fff;
+				}
 				.sub-menu {
 					display: block;
 				}
@@ -234,7 +238,7 @@
 
 	// Copied to affect all menu items on the site
 	@media screen and ( min-width: 600px ) and ( max-width: 1200px ) {
-		.use-title-for-small a {
+		.use-title-for-small > a {
 			overflow: hidden;
 			text-indent: -9999px;
 			&:after {
