@@ -199,6 +199,11 @@
 				}
 			}
 
+			.current-menu-parent:hover > a {
+				color: #fff;
+				background: $green;
+			}
+
 			&:hover {
 				> a {
 					color: $darkerblue;
